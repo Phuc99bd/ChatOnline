@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat Online</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="index.css">
+	 <link rel="shortcut icon" type="image/jpg" href="icon.jpg">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" style="padding: 0;">
+				<h2 class="nav-title">Chat Room Online -By FFQ</h2>
+			</div>
+			<div class="join-random">
+			<div class="col-md-12" style="padding: 0">
+				<p class="ds-room">Danh sách Room</p>
+			</div>
+			<div class="col-md-12">
+				<div class="rom">
+					<div class="row">
+				<div class="col-md-3">
+					<p>Chat room,giao lưu</p>
+					<p><input type="submit" value="Join" id="Join"></p>
+				</div>
+				<div class="col-md-3">
+					<p>Lập trình Nodejs</p>
+					<p><input type="submit" value="Join" id="Join2"></p>
+				</div>
+				<div class="col-md-3">
+					<p>Lập trình ASP</p>
+					<p><input type="submit" value="Join" id="Join3"></p>
+				</div>
+				<div class="col-md-3">
+					<p>Lập trình Android</p>
+					<p><input type="submit" value="Join" id="Join4"></p>
+				</div>
+				</div>
+				</div>
+
+			</div>
+			</div>
+			<div class="room-chat">
+			<div class="col-md-12">
+				<p style="text-align: center; border-bottom: 1px silver solid; ">Xin chào bạn đến với Room <span id="TENROM"></span><input type="submit" value="LogRoom" style="float: right; padding: 5px 20px; background: #2E3CEE;color:#fff;" id="logout"></p>
+				<div class="noidung-chat" >
+					
+				</div>
+				<div class="sent">
+					<label>Tên hiển thị</label><br>
+					<input type="text" name="" placeholder="tên hiển thị" class="form-control" style="margin-bottom: 0.5%;" required="" id="tenhienthi">
+					<label>Nội dung</label><br>
+					<input type="text" name="" placeholder="Nội dung" class="form-control"style="margin-bottom: 0.5%;" required="" id="nd">
+					<input type="submit" value="Send" name="" class="btn btn-primary" id="submit-noidung">
+				</div>
+			</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ffqphuc.herokuapp.com/socket.io/socket.io.js"></script>
+	
+
+	<script type="text/javascript" src="trangchu.js"></script>
+		
+</body>
+</html>

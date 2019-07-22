@@ -1,4 +1,4 @@
-var socket = io("localhost:8888");
+var socket = io("https://ffqphuc.herokuapp.com");
 $('#Join').click(function() {
 	socket.emit("Join-room","Chat room,giao lưu");
 })

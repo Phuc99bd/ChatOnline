@@ -6,7 +6,7 @@ app.set("views","./views");
 
 var server = require("http").createServer(app);
 
-server.listen(8888);
+server.listen(process.env.PORT || 3000);
 var io =require("socket.io")(server);
 
 var manggiaoluu = [];
